@@ -101,7 +101,7 @@ main() {
 
   local show_directory_in_window_status_current
   #readonly show_directory_in_window_status_current="#[fg=$thm_bg,bg=$thm_orange] #I #[fg=$thm_fg,bg=$thm_bg] #{b:pane_current_path} "
-  readonly show_directory_in_window_status_current="#{?client_prefix,#[bg=$thm_red],#[bg=$thm_orange]}#[fg=colour232] #I #{?client_prefix,#[fg=$thm_bg],#[fg=colour255]}#{?client_prefix,#[bg=$thm_red],#[bg=colour237]} #(echo '#{pane_current_path}' | rev | cut -d'/' -f-2 | rev) "
+  readonly show_directory_in_window_status_current="#[bg=$thm_orange]}#[fg=colour232]#I #{?client_prefix,#[fg=$thm_bg],#[fg=colour255]}#{?client_prefix,#[bg=$thm_red],#[bg=colour237]} #(echo '#{pane_current_path}' | rev | cut -d'/' -f-2 | rev) "
 
   local show_window_in_window_status
   readonly show_window_in_window_status="#[fg=$thm_fg,bg=$thm_bg] #W #[fg=$thm_bg,bg=$thm_blue] #I#[fg=$thm_blue,bg=$thm_bg]$left_separator#[fg=$thm_fg,bg=$thm_bg,nobold,nounderscore,noitalics] "
